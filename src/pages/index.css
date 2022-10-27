@@ -1,0 +1,146 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+.row-left {
+  display: flex;
+  flex: 1;
+}
+.row-middle {
+  display: flex;
+  flex: 1;
+}
+.row-right {
+  display: flex;
+  flex: 1;
+}
+
+.strength-customer-container {
+  background-color: rgba(129, 129, 129, 0.2);
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  padding: 3rem;
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(129, 129, 129, 0.2);
+}
+
+.input-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-container {
+  background-color: var(--main);
+  margin-top: 5rem;
+  /* margin-bottom: 5rem; */
+}
+
+.row-footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+}
+.link-footer {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.row-footer > ul {
+  margin-left: 0;
+}
+
+.row-footer > ul :hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+.footer-logo-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.OfferCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+  background: white;
+  box-shadow: 10px 10px 15px -2px rgba(0, 0, 0, 0.23);
+  border-radius: 34px;
+  height: 20rem;
+  border-style: solid;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+  background: white;
+  box-shadow: 10px 10px 15px -2px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  height: 20rem;
+}
+.zoom:hover {
+  background: white;
+  box-shadow: 10px 10px 15px -2px rgba(0, 0, 0, 0.23);
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 10rem;
+    padding: 1rem;
+  }
+  .row-left {
+    flex-direction: column;
+  }
+  .row-middle {
+    flex-direction: column;
+  }
+  .row-right {
+    flex-direction: column;
+  }
+  .input-row {
+    flex-direction: column;
+  }
+  .OfferCard {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    height: 25rem;
+  }
+  .card-container {
+    height: 25rem;
+    padding: 1rem;
+    margin: 0;
+  }
+}
